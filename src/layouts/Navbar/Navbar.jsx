@@ -1,6 +1,6 @@
-export const Navbar = ({children}) => {
+export const Navbar = ({children,stylesNavbar}) => {
   return (
-    <nav className="">
+    <nav className={stylesNavbar}>
         {children}
     </nav>
   )
