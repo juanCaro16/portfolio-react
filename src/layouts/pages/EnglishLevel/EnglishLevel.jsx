@@ -1,8 +1,54 @@
 export const EnglishLevel = () => {
+
+  const levels = [
+    [
+      { level: "A1", title: "Principiante", description: "Comprende y usa expresiones cotidianas básicas. Se presenta y da información personal sencilla." },
+      { level: "A2", title: "Elemental", description: "Comprende frases y expresiones frecuentes. Puede comunicarse en situaciones simples y cotidianas." }
+    ],
+    [
+      { level: "B1", title: "Intermedio", description: "Entiende los puntos principales de conversaciones. Se desenvuelve en situaciones durante un viaje." },
+      { level: "B2", title: "Intermedio alto", description: "Comprende ideas complejas y puede interactuar con hablantes nativos con fluidez." }
+    ],
+    [
+      { level: "C1", title: "Avanzado", description: "Comprende textos largos y exigentes. Se expresa de manera fluida y usa el idioma en contextos profesionales." },
+      { level: "C2", title: "Maestría", description: "Comprende prácticamente todo. Se expresa espontáneamente y diferencia matices sutiles." }
+    ]
+  ];
+
   return (
-    <>
-      <h1 className="text-red-600 mt-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque similique quod perspiciatis autem consequuntur fugiat a accusantium hic error iste facilis quaerat unde natus distinctio incidunt, voluptas corporis! Sit, consequuntur!    </h1>
-    </>
-  )
-}
+<>
+
+    <h1 className="text-white text-xl mt-10 font-bold">Acerca De Mi Nivel</h1>
+
+    <p className="text-white text-xl mt-10 w-150 text-justify">Actualmente mi nivel de ingles de grado B1, puesto que en el mundo del desarrollo es demasiado importante me estoy esforzando por conseguir un mayor nivel. Deseo llegar a C1 en algun futuro!</p>
+
+    <h2 className="text-white text-2xl mt-15 font-black ">Diferencias Entre Los Niveles</h2>
+
+    <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 p-4 mt-5">
+      
+      {levels.map((column, columnIndex) => (
+        
+        <div key={columnIndex} className="flex flex-col gap-4">
+
+          {column.map((item, index) => (
+            
+            <div key={index} className="bg-blue-100 p-4 rounded-2xl shadow-md hover:shadow-lg transition">
+              <h2 className="text-xl font-bold text-blue-800">{item.level} - {item.title}</h2>
+              <p className="text-gray-700 mt-2">{item.description}</p>
+            
+            </div>
+          )
+        )
+      }
+
+        </div>
+      )
+    )
+  }
+    </div>
+  </>
+  );
+};
+
+
 

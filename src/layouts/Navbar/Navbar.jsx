@@ -3,7 +3,7 @@ export const Navbar = ({children,stylesNavbar}) => {
     <nav className={stylesNavbar}>
         {children}
     </nav>
-  )
+      )
 }
 
 
