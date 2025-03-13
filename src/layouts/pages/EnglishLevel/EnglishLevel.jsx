@@ -32,9 +32,9 @@ export const EnglishLevel = () => {
 
           {column.map((item, index) => (
             
-            <div key={index} className="bg-blue-100 p-4 rounded-2xl shadow-md hover:shadow-lg transition">
-              <h2 className="text-xl font-bold text-blue-800">{item.level} - {item.title}</h2>
-              <p className="text-gray-700 mt-2">{item.description}</p>
+            <div key={index} className="bg-[#D1FAE5] p-6 rounded-2xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 ease-in-out">
+              <h2 className="text-xl font-bold text-black">{item.level} - {item.title}</h2>
+              <p className="text-[#065F46] mt-2">{item.description}</p>
             
             </div>
           )
