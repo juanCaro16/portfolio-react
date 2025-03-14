@@ -5,6 +5,7 @@ import { SocialSkills } from "./layouts/pages/SocialSkills/SocialSkills"
 import { Main } from "./layouts/Main/Main"
 import { Studies } from "./layouts/pages/Studies/Studies"
 import { Footer } from "./layouts/Footer/Footer"
+import { TechnicalSkills } from "./layouts/pages/Technical Skills/TechnicalSkills"
 
 
 export const App = () => {
@@ -15,6 +16,7 @@ export const App = () => {
       <Route path="/" element={<Main />} />
       <Route path="/EnglishLevel" element={<EnglishLevel />}/>
       <Route path="/SocialSkills" element={<SocialSkills />} />
+      <Route path="/TechnicalSkills" element={<TechnicalSkills />} />      
       <Route path="/Studies" element={<Studies />}/>
       <Route />
     </Routes>

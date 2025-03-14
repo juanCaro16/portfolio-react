@@ -20,9 +20,9 @@ export const EnglishLevel = () => {
 
     <h1 className="text-white text-xl mt-10 font-bold">Acerca De Mi Nivel</h1>
 
-    <p className="text-white text-xl mt-10 w-150 text-justify">Actualmente mi nivel de ingles de grado B1, puesto que en el mundo del desarrollo es demasiado importante me estoy esforzando por conseguir un mayor nivel. Deseo llegar a C1 en algun futuro!</p>
+    <p className="text-white text-xl mt-10 w-auto p-[15px] text-justify ">Actualmente mi nivel de ingles de grado B1, puesto que en el mundo del desarrollo es demasiado importante me estoy esforzando por conseguir un mayor nivel. Deseo llegar a C1 en algun futuro!</p>
 
-    <h2 className="text-white text-2xl mt-15 font-black ">Diferencias Entre Los Niveles</h2>
+    <h2 className="text-white text-2xl mt-15 font-black sm:2/1  text-center ">Diferencias Entre Los Niveles</h2>
 
     <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 p-4 mt-5">
       
