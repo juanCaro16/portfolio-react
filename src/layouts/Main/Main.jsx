@@ -1,4 +1,4 @@
-import imgMain from "../../assets/images/foto_jdcv.jpg"
+import imgMain from "../../assets/images/imagenPrincipal.jpg"
 
 
 export const Main = () => {
